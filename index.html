@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PLP Assignment Week 6</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>PLP6:Interactive Web Pages</h1>
+
+  <!-- Part 1: Event Handling -->
+  <section>
+    <h2>Event Handling Example</h2>
+    <button id="messageBtn">Testing</button>
+    <p id="message"></p>
+  </section>
+
+  <!-- Part 2: Interactive Elements -->
+  <section>
+    <h2>This is an Interactive Elements Example</h2>
+
+    <!-- Light/Dark Toggle -->
+    <button id="toggleMode">click to Switch between dark and Light</button>
+
+    <!-- Counter -->
+    <div>
+      <h3>Counter: <span id="count">0</span></h3>
+      <button id="incrementBtn"> + Increment</button>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq">
+      <h3>FAQ</h3>
+      <button class="faq-toggle">What is this Javascript?</button>
+      <p class="faq-answer">JavaScript is a high-level, interpreted programming language that is a core 
+          technology of the World Wide Web, alongside HTML and CSS.<br>
+          It is primarily used to create dynamic and interactive content on websites, bringing web pages to 
+          life beyond static information</p>
+    </div>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section>
+    <h2>Form Validation</h2>
+    <form id="myForm">
+      <label>Name: <input type="text" id="name"></label>
+      <span class="error" id="nameError"></span><br><br>
+
+      <label>Email: <input type="email" id="email"></label>
+      <span class="error" id="emailError"></span><br><br>
+
+      <label>Password: <input type="password" id="password"></label>
+      <span class="error" id="passwordError"></span><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formSuccess"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
