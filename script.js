@@ -3,7 +3,41 @@ document.getElementById("messageBtn").addEventListener("click", function () {
     document.getElementById("message").textContent = "Hello user You clicked the button as a response of onclickListener";
   });
   
+  // Mouseover Event 
+  document.getElementById("hoverBox").addEventListener("mouseover", function () {
+    document.getElementById("hoverMessage").textContent = " You have hovered over this box!";
+  });
+  
+  //  Keyboard Input 
+  document.getElementById("nameInput").addEventListener("input", function (event) {
+    let name = event.target.value;
+    document.getElementById("keyboardMessage").textContent =
+      name ? `Hello, ${name}! You are doing very good on JavaScript` : "";
+  });
+  
+  
+  
   // === Part 2: Interactive Elements ===
+
+  // Get all tab buttons and contents
+const tabButtons = document.querySelectorAll(".tab-button");
+const tabContents = document.querySelectorAll(".tab-content");
+
+// Loop through tab buttons
+tabButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const tabId = button.getAttribute("data-tab");
+
+    // Remove 'active' from all buttons & contents
+    tabButtons.forEach((btn) => btn.classList.remove("active"));
+    tabContents.forEach((content) => content.classList.remove("active"));
+
+    // Add 'active' to clicked button & matching content
+    button.classList.add("active");
+    document.getElementById(tabId).classList.add("active");
+  });
+});
+
   
   // Light/Dark mode switch
   document.getElementById("toggleMode").addEventListener("click", function () {

@@ -16,9 +16,40 @@
     <p id="message"></p>
   </section>
 
+  <!-- Mouseover Event Example -->
+  <div id="hoverBox">Hover over me!</div>
+  <p id="hoverMessage"></p>
+
+  <!-- Keyboard Input Event Example -->
+  <input type="text" id="nameInput" placeholder="Type your name">
+  <p id="keyboardMessage"></p>
+
   <!-- Part 2: Interactive Elements -->
   <section>
     <h2>This is an Interactive Elements Example</h2>
+
+    <div class="tabs">
+        <button class="tab-button active" data-tab="tab1">Home</button>
+        <button class="tab-button" data-tab="tab2">About</button>
+        <button class="tab-button" data-tab="tab3">Contact</button>
+      </div>
+
+       <!-- Tab content -->
+  <div class="tab-content active" id="tab1">
+    <h3>Home</h3>
+    <p>Welcome to the Home tab! </p>
+  </div>
+
+  <div class="tab-content" id="tab2">
+    <h3>About</h3>
+    <p>This tab tells you more about our awesome project</p>
+  </div>
+
+  <div class="tab-content" id="tab3">
+    <h3>Contact</h3>
+    <p>You can reach us at: <b>plp@email.com</b></p>
+  </div>
+  <br>
 
     <!-- Light/Dark Toggle -->
     <button id="toggleMode">click to Switch between dark and Light</button>

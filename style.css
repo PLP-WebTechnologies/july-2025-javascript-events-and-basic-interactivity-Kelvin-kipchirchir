@@ -18,4 +18,33 @@ body {
     display: none;
     margin-top: 5px;
   }
+  .tabs {
+    margin-bottom: 15px;
+  }
+  
+  .tab-button {
+    padding: 10px 20px;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+    background: #ddd;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .tab-button.active {
+    background: #007bff;
+    color: white;
+  }
+  
+  .tab-content {
+    display: none;
+    padding: 15px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 5px;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
   
